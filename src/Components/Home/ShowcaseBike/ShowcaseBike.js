@@ -13,21 +13,24 @@ const ShowcaseBike = props => {
 
     useEffect(() => {
         const tokenSource = axios.CancelToken.source()
-        axios.get(`/api/bike/images/${bike.bike_id}`, { cancelToken: tokenSource.token })
-            .then(res => {
-                setBikeImg(res.data[0]?.url)
-                setLoading(false)
-            })
-            .catch(err => console.log(err))
-
+        if (bike) {
+            axios.get(`/api/bike/images/${bike.bike_id}`, { cancelToken: tokenSource.token })
+                .then(res => {
+                    setBikeImg(res.data[0]?.url)
+                    setLoading(false)
+                })
+                .catch(err => console.log(err))
+        }
         return () => {
             tokenSource.cancel()
         }
-    }, [bike.bike_id])
+    }, [bike])
 
     return (
         <div className='showcase-bike-item-container'>
-            <Link to={`/builds/${bike.bike_id}`}><h3>{bike.title}</h3></Link>
+            {bike && (
+                <Link to={`/builds/${bike.bike_id}`}><h3>{bike.title}</h3></Link>
+            )}
             {loading
                 ? <CircularProgress />
                 : <img src={bikeImg} alt={bike.title} />}

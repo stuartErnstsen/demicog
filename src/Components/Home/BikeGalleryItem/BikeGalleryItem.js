@@ -25,16 +25,14 @@ const BikeGalleryItem = props => {
 
     return (
 
-        loading ? (
-            <CircularProgress />
-        ) : (
-                <Link to={`/builds/${bike.bike_id}`}>
-                    <div className='img-gal-container' key={bike.bike_id}>
-                        {/* <h4>{bike.title}</h4> */}
-                        <img src={bikeImg} alt={bike.title} />
-                    </div>
-                </Link>
-            )
+        !loading && (
+            <Link to={`/builds/${bike.bike_id}`}>
+                <div className='img-gal-container' key={bike.bike_id}>
+                    {/* <h4>{bike.title}</h4> */}
+                    <img src={bikeImg} alt={bike.title} />
+                </div>
+            </Link>
+        )
 
     )
 }

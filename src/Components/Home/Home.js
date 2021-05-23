@@ -39,21 +39,14 @@ const Home = props => {
             <div id='home-content-container'>
                 <section id="bike-showcase-container">
                     <p>Welcome to <span>DEMICOG</span>! A commune for track bikes and their owners. Check out bike <Link to={`/builds/page/${1}`}><span>BUILDS</span></Link> by the community or submit your own! Got some dusty parts in the back of your closet? Some shiny parts you no longer love? Throw em' up on the <Link to='/market'><span>MARKET</span></Link> and make the big bucks!</p>
-                    {loading ? (
-                        <CircularProgress />
-                    ) : (
-                        <>
-                            <h4>RANDOM SPOTLIGHT</h4>
-                            <div id='bike-container' className=''>
-                                <ShowcaseBike bike={showcase[0]} />
-                                <ShowcaseBike bike={showcase[1]} />
-                            </div>
-                        </>
 
-                    )
-
-                    }
-
+                    <>
+                        <h4>RANDOM SPOTLIGHT</h4>
+                        <div id='bike-container' className=''>
+                            <ShowcaseBike bike={showcase[0]} />
+                            <ShowcaseBike bike={showcase[1]} />
+                        </div>
+                    </>
                 </section>
 
                 <section id='gallery-container'>

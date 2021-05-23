@@ -26,20 +26,18 @@ const MarketGalleryItem = props => {
 
     return (
 
-        loading ? (
-            <CircularProgress />
-        ) : (
-                <Link to={`/market/${post.classified_id}`}>
-                    <div className='img-gal-container' key={post.classified_id}>
-                        <div className='market-info'>
-                            <h5>{post.title}</h5>
-                            <h5>{post.type}</h5>
-                            <h5>$ {parseInt(post.price).toFixed(2)} </h5>
-                        </div>
-                        <img src={postImg} alt={post.title} />
+        !loading && (
+            <Link to={`/market/${post.classified_id}`}>
+                <div className='img-gal-container' key={post.classified_id}>
+                    <div className='market-info'>
+                        <h5>{post.title}</h5>
+                        <h5>{post.type}</h5>
+                        <h5>$ {parseInt(post.price).toFixed(2)} </h5>
                     </div>
-                </Link>
-            )
+                    <img src={postImg} alt={post.title} />
+                </div>
+            </Link>
+        )
 
     )
 }
