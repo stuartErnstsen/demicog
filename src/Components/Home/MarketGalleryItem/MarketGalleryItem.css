@@ -1,0 +1,14 @@
+.img-gal-container {
+    display: flex;
+}
+
+.market-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-right: 5px;
+    min-width: 40%;
+    background-color: #F06F66;
+    font-size: .75rem;
+}

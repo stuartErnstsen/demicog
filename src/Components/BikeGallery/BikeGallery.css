@@ -1,0 +1,225 @@
+#main-builds {
+    max-height: calc(100vh - 80px);
+}
+
+#main-builds .title-container {
+    box-shadow: 0 0 10px black;
+}
+
+
+.large-gallery {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    position: relative;
+    /* background-color: hsl(36, 14%, 45%); */
+    min-height: calc(100vh - 80px);
+    max-height: calc(100vh - 80px);
+    width: 100%;
+    flex-grow: 1;
+    overflow-x: hidden;
+    box-shadow: 0 0 10px black;
+    padding-top: 80px;
+}
+
+.gallery-list {
+    overflow-y: auto;
+
+}
+
+.paginate-nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    left: 0;
+}
+
+.paginate-btn-container {
+    display: flex;
+    /* background-color: blue; */
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 0px 30px;
+}
+
+.paginate-previous-container {
+    justify-content: flex-end;
+}
+
+.paginate-current-container {
+    position: absolute;
+}
+
+.paginate-current-container h4{
+    font-size: 4rem;
+    color: #F06F66;
+}
+
+.paginate-btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+ 
+}
+
+.paginate-btn-box h6 {
+    font-size: 1.2rem;
+    color: black;
+}
+
+#bike-input-toggle-button svg {
+    height: 40px;
+    width: 30px;
+    color: white;
+}
+
+#bike-input-toggle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+    left: -60px;
+    width: 60px;
+    height: 200px;
+    background-color: #F06F66;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 3rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#pulse-container {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 1;
+    transition: 1s linear;
+}
+
+.button-pulse {
+    opacity: .5 !important;
+}
+
+#pulse-text {
+    position: absolute;
+    font-size: 1.8rem;
+    width: 200px;
+    transform-origin: center right;
+    transform: rotate(90deg) translateY(156px) translateX(65%); 
+    user-select: none;
+}
+
+#bike-input-container {
+    position: fixed;
+    height: calc(100% - 160px);
+    width: 300px;
+    right: 0px;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    transition: .5s;
+}
+
+.hide-bike-input {
+    width: 0px !important;
+}
+
+#close-input-click-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#login-prompt {
+    background-color: #F06F66;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    word-spacing: .4rem;
+    overflow: hidden;
+    font-size: 1.2rem;
+    color: black;
+    width: 300px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0px;
+    transform-origin: center right;
+    transform: rotate(90deg) translateY(50%) translateX(50%); 
+}
+
+#bike-input-container form {
+    position: relative;
+    left: 300px;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #4EA3E4;
+    font-size: .75rem;
+    font-weight: bold;
+    color: black;
+    transform: translateX(-300px);
+    transition: .5s;
+}
+
+#bike-input-container input {
+    border: none;
+    height: 20px;
+    margin: 0px 0px 5px 0px;
+    border-radius: 5px;
+}
+
+#bike-input-container h3 {
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+#bike-input-container h3:first-of-type {
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+#bike-input-container h3:last-of-type {
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    background-color: transparent;
+}
+
+.gallery-list::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+.gallery-list::-webkit-scrollbar-thumb {
+    background: #F06F66;
+    border-radius: 5px;
+}
+

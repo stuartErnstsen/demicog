@@ -1,0 +1,85 @@
+
+
+.bike-item-container {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid black;
+}
+
+.bike-item-img-container {
+    position: relative;
+    max-height: 150px;
+    max-width: 200px;
+    background-color: black;
+}
+
+.bike-item-img-container a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bike-list-img {
+    position: relative;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    border: 1px solid black;
+    background-color: #272727;
+}
+
+.bike-item-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 5px;
+}
+
+.bike-item-info-container h2 {
+    width: 100%;
+    color: #F06F66;
+    border-bottom: 2px solid #F06F66;
+}
+
+.bike-item-info-container h5 {
+    display: flex;
+}
+
+.bike-item-container button {
+    width: 80px;
+    border: none;
+    background-color: #F06F66;
+    font-weight: bold;
+    color: white;
+}
+
+.bike-item-container button svg {
+    width: 50px;
+    height: 50px;
+}   
+
+.bike-item-container button:hover {
+    color: black;
+}
+
+.info-key {
+    display: block;
+    width: 120px;
+    text-align: end;
+    margin-right: 5px;
+    border-bottom: 1px solid white;
+}
+
+.info-value {
+    color: #4EA3E4;
+    word-break: break-all;
+}
+
+.bike-item-container:nth-child(odd) {
+    background-color: rgb(70, 70, 70);
+}
+
+

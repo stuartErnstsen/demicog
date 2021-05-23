@@ -1,0 +1,1 @@
+select * from bike order by random() limit 2;

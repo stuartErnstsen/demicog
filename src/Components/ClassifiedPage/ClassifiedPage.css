@@ -1,0 +1,11 @@
+#main-market-profile .page-info-container {
+    font-size: 1rem;
+    justify-content: flex-start;
+}
+
+#main-market-profile .page-info-container h5 {
+    margin-top: 20px;
+}
+
+#main-market-profile .page-info-container p {
+}

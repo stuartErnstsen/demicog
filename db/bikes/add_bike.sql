@@ -1,0 +1,38 @@
+insert into bike (
+    user_id,
+    post_date,
+    title,
+    manufacturer,
+    frame,
+    fork,
+    wheelset,
+    tires,
+    headset,
+    stem,
+    handlebars,
+    saddle,
+    seatpost,
+    crankset,
+    cog,
+    chain,
+    pedals
+) values (
+    ${user_id},
+    CURRENT_TIMESTAMP,
+    ${title},
+    ${manufacturer},
+    ${frame},
+    ${fork},
+    ${wheelset},
+    ${tires},
+    ${headset},
+    ${stem},
+    ${handlebars},
+    ${saddle},
+    ${seatpost},
+    ${crankset},
+    ${cog},
+    ${chain},
+    ${pedals}
+)
+returning bike_id;

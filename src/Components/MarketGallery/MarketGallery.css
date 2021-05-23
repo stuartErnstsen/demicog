@@ -1,0 +1,9 @@
+textarea {
+    width: 260;
+    flex-grow: 1;
+    resize: none;
+}
+
+.page-info-container {
+    margin-left: 0px;
+}

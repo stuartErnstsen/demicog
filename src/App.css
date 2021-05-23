@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+input, button {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.App {
+  min-width: 100%;
+  min-height: 100vh;
+  padding-top: 80px;
+  /* background-color: #837663; */
+  background-color: rgb(39, 39, 39);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+
+svg:hover {
+  color: black;
+}
+
+.MuiCircularProgress-colorPrimary {
+  color: #F06F66 !important;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #F06F66;
+  border-radius: 5px;
+}

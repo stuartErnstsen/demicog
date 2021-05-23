@@ -1,0 +1,251 @@
+main {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 140px;
+    background-color: rgb(39, 39, 39);
+}
+
+#home-content-container {
+    width: 100%;
+    display: flex;
+    min-height: calc(100vh - 80px);
+    max-height: calc(100vh - 80px);
+    box-shadow: -1px 0px 10px black;
+    /* padding: 30px 0px; */
+}
+
+.title-container {
+    min-height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    line-height: 50px;
+    padding-left: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 50px;
+    border-bottom: 1px solid black;
+    color:#F06F66;
+}
+
+#build-mini-gallery .title-container{
+    color: #4EA3E4;
+}
+
+/* =======SHOWCASE STYLING================================================= */
+
+
+#bike-showcase-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(39, 39, 39);
+    padding: 30px 60px;
+    /* background-color: #F06F66; */
+}
+
+#bike-showcase-container p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#bike-showcase-container span {
+    color: #F06F66;
+}
+
+#bike-showcase-container > h4 {
+    font-size: 2rem;
+    text-align: left;
+    align-self: flex-start;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+
+#bike-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px solid #F06F66;
+    overflow: hidden;
+}
+
+.showcase-bike-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50%;
+    display: flex;
+    overflow: hidden;
+}
+
+.showcase-bike-item-container:first-child {
+    border-bottom: 2px solid #F06F66;
+}
+
+.showcase-bike-item-container h3 {
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: #F06F66;
+    padding: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.showcase-bike-item-container img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.showcase-bike-info {
+    right: 0px;
+    width: 40px;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #F06F66;
+    box-shadow: -1px 0 5px black;
+    overflow: hidden;
+    transition: width .5s;
+    cursor: pointer;
+}
+
+.showcase-bike-info svg {
+    position: absolute;
+    left: 0;
+}
+
+.showcase-bike-info h4 {
+    color: black;
+}
+
+.showcase-bike-info h5 {
+    margin-bottom: 10px;
+}
+
+.show-bike-info {
+    width: 400px;
+}
+
+
+/* =======GALLERY STYLING================================================ */
+
+#gallery-container {
+    width: 50%;
+    display: flex;
+    min-height: calc(100vh - 80px);
+}
+
+.gallery {
+    position: relative;
+    padding-top: 80px;
+    width: 50%;
+    box-shadow: -1px 0px 5px black;
+}
+
+#build-mini-gallery {
+    max-height: 100%;
+    background-color: rgb(75, 75, 75);
+    display: flex;
+    flex-direction: column;
+}
+
+.containerrr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    /* padding: 0 20px; */
+}
+
+.img-gal-container {
+    height: 100px;
+    position: relative;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.img-gal-container:hover {
+    border: 2px solid #F06F66;
+}
+
+#build-mini-gallery img, #market-mini-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;   
+    object-position: 50% 75%;
+}
+
+#market-mini-gallery {
+    background-color: #979797;
+}
+
+.containerrr::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+.containerrr::-webkit-scrollbar-thumb {
+    background: #F06F66;
+    border-radius: 5px;
+  }
+
+@media (max-width: 1500px) {
+    #bike-showcase-container {
+        padding: 30px 30px;
+    }
+
+    #bike-showcase-container p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    #home-content-container {
+        flex-direction: column;
+    }
+
+    #bike-showcase-container {
+        width: 100%;
+    }
+
+    #bike-showcase-container p{
+        margin-bottom: 0px;
+    }
+
+    #gallery-container {
+        min-height: 0px;
+        width: 100%;
+    }
+
+    #bike-container, #bike-showcase-container h4 {
+        display: none;
+    }
+}
+
+
+
+
+
+
