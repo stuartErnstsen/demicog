@@ -9,7 +9,7 @@
   - HTML5
   - CSS3
   - Javascript
-  - React / ReactHooks / ReactContext
+  - React / ReactHooks / Redux
   - Axios
 
 //BACKEND and RESTFUL API
