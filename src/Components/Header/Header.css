@@ -7,8 +7,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #837663;
-    background-color: #979797;
+    background-color: #ffffff;
     
     box-shadow: 0 0 5px rgb(34, 31, 27);
 }
@@ -26,7 +25,7 @@ header {
     align-items: center;
     justify-content: center;
     /* background-color:#746349; */
-    background-color: #F06F66;
+    background-color: #ffffff;
     border-right: 1px solid black;
 }
 
@@ -35,10 +34,11 @@ header {
 }
 
 #header-title {
-    min-width: 410px;
     max-height: 80px;
     line-height: 80px;
     font-size: 5.5rem;
+    color: rgb(168, 150, 116);
+    padding: 0 15px;
 }
 
 #new-comment-feed {
@@ -71,11 +71,6 @@ header {
 
 #new-comment-feed a:hover {
     color: #F06F66;
-}
-
-.hide-comment-feed {
-    max-height: 0vh !important;
-    border-bottom: none !important;
 }
 
 .comment {
@@ -122,12 +117,12 @@ header {
     left: 550px;
     width: 330px;
     height: 80px;
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    border-left: 1px solid black;
+    border-left: 1px solid rgb(65, 65, 65);
     /* background-color: #4EA3E4; */
     z-index: 3;
     font-weight: bold;
@@ -136,7 +131,7 @@ header {
 #main-nav a {
     height: 33%;
     width: 100px;
-    color: rgb(39, 39, 39);
+    color: rgb(65, 65, 65);
     text-decoration: none;
     /* border-right: 1px solid black; */
 }
@@ -154,8 +149,8 @@ header {
 }
 
 #nav-lines {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid rgb(65, 65, 65);
+    border-bottom: 1px solid rgb(65, 65, 65);
 }
 
 #user-info-container {
