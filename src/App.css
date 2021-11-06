@@ -14,14 +14,15 @@ button {
 }
 
 .App {
+  position: relative;
   min-width: 100%;
   min-height: 100vh;
+  max-height: 100vh;
   padding-top: 80px;
+  /* overflow-y: hidden; */
   /* background-color: #837663; */
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(255, 255, 255);
   color: white;
-  display: flex;
-  flex-direction: column;
 }
 
 a {
@@ -37,15 +38,13 @@ svg:hover {
   color: black;
 }
 
-.MuiCircularProgress-colorPrimary {
-  color: #F06F66 !important;
-}
 
 *::-webkit-scrollbar {
-  width: 10px;
+  border: none;
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #F06F66;
-  border-radius: 5px;
+  background: rgb(168, 150, 116);
+  border-radius: 100vh;
+  border: 3px solid white;
 }

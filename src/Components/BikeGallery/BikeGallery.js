@@ -44,19 +44,39 @@ const BikeGallery = props => {
     // }, [cancelTokenSource.token])
 
     const initPaginationButtons = useCallback(() => {
-        let tempPrevButtonArr = []
+        // let tempPrevButtonArr = []
         let tempNextButtonArr = []
         let count = 0
-        for (let i = +page - 1; i > 0 && count < 3; i--) {
-            count++
-            tempPrevButtonArr.unshift(
-                <Link to={`/builds/page/${i}`} key={i}>
+        // for (let i = +page - 1; i > 0 && count < 3; i--) {
+        //     count++
+        //     tempPrevButtonArr.unshift(
+        //         <Link to={`/builds/page/${i}`} key={i}>
+        //             <div className='paginate-btn-box'>
+        //                 <h6>{i}</h6>
+        //             </div>
+        //         </Link>
+        //     )
+        // }
+        //NEED TO TEST THIS!!  VVVVVVVVVVVVVVVVV
+        //NEED TO TEST THIS!!  VVVVVVVVVVVVVVVVV
+        //NEED TO TEST THIS!!  VVVVVVVVVVVVVVVVV
+        //NEED TO TEST THIS!!  VVVVVVVVVVVVVVVVV
+        //NEED TO TEST THIS!!  VVVVVVVVVVVVVVVVV
+        //NEED TO TEST THIS!!  VVVVVVVVVVVVVVVVV
+        //NEED TO TEST THIS!!  VVVVVVVVVVVVVVVVV
+        //NEED TO TEST THIS!!  VVVVVVVVVVVVVVVVV
+        //NEED TO TEST THIS!!  VVVVVVVVVVVVVVVVV
+        //NEED TO TEST THIS!!  VVVVVVVVVVVVVVVVV
+        const tempPrevButtonArr = [...(new Array(+page > 3 ? 3 : +page - 1))].map((e, i) => {
+            const pageNum = +page - (i + 1)
+            return (
+                <Link to={`/builds/page/${pageNum}`} key={pageNum}>
                     <div className='paginate-btn-box'>
-                        <h6>{i}</h6>
+                        <h6>{pageNum}</h6>
                     </div>
                 </Link>
             )
-        }
+        })
         count = 0;
         for (let i = +page + 1; i <= Math.ceil(totalItems / itemsPerPage) && count < 3; i++) {
             count++
@@ -89,7 +109,7 @@ const BikeGallery = props => {
 
 
     const handleChange = (e) => {
-        setBikeInput({ ...bikeInput, [e.target.name]: e.target.value })
+        setBikeInput(old => ({ ...old, [e.target.name]: e.target.value }))
     }
 
     const handleBikeSubmit = (e) => {

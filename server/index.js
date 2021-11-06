@@ -9,9 +9,9 @@ const express = require('express'),
     commentCtrl = require('./controllers/commentController'),
     { SERVER_PORT, CONNECTION_STRING, SESSION_SECRET } = process.env,
     app = express()
-
 const profile = require('./AWSroutes/api/profile');
 app.use('/api/profile', profile);
+
 
 app.use(express.json())
 app.use(session({

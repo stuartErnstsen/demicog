@@ -14,11 +14,7 @@ const Header = props => {
     const [commentFeedView, setCommentFeedView] = useState(false)
     return (
         <>
-            <nav id='main-nav'>
-                <Link to='/'><p>HOME</p></Link>
-                <Link to={`/builds/page/${1}`}><p id='nav-lines'>BUILDS</p></Link>
-                <Link to='/market'><p>MARKET</p></Link>
-            </nav>
+
             <header>
 
                 <div className='header-left-container'>
@@ -30,6 +26,11 @@ const Header = props => {
                     <Link to='/' >
                         <h1 id='header-title'>DEMICOG</h1>
                     </Link>
+                    <nav id='main-nav'>
+                        <Link to='/'><p>HOME</p></Link>
+                        <Link to={`/builds/page/${1}`}><p id='nav-lines'>BUILDS</p></Link>
+                        <Link to='/market'><p>MARKET</p></Link>
+                    </nav>
                 </div>
                 {user !== null &&
                     <>
