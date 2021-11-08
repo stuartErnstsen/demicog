@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { setCommentFeed } from '../../../ducks/Reducers/commentReducer'
+import { setCommentFeed } from '../../../../ducks/Reducers/commentReducer'
 import axios from 'axios';
 import SaveIcon from '@material-ui/icons/Save';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';

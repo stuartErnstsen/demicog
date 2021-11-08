@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
-input, button {
+input,
+button {
   outline: none;
 }
 
@@ -25,19 +26,21 @@ button {
   color: white;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+a,
+p,
+span,
+button {
+  transition: 0.2s color;
 }
 
-a:hover {
+a {
+  text-decoration: none;
   color: black;
 }
 
 svg:hover {
   color: black;
 }
-
 
 *::-webkit-scrollbar {
   border: none;

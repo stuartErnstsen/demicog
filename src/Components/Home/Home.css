@@ -1,34 +1,35 @@
 .main-home {
-    position: relative;
-    max-height: calc(100vh - 80px);
-    display: flex;
-    padding: 0px 140px;
+  position: relative;
+  max-height: calc(100vh - 80px);
+  display: flex;
+  padding: 0px 140px;
 }
 
 .home-bike-list-container {
-    min-width: 50%;
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1px;
-    overflow-y: scroll;
+  min-width: 50%;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1px;
+  overflow-y: scroll;
+}
+
+.home-bike-list-container::-webkit-scrollbar {
+  display: none;
 }
 
 .home-bike-list-item-container {
-    position: relative;
-    padding-bottom: 100%;
+  position: relative;
+  padding-bottom: 100%;
 }
 
 .home-bike-list-item-container > * {
-    position: absolute;
+  position: absolute;
 }
 
 .home-bike-list-item-container img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-
-
-

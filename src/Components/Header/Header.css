@@ -1,59 +1,72 @@
 header {
-    z-index: 2;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ffffff;
-    
-    box-shadow: 0 0 5px rgb(34, 31, 27);
+  z-index: 2;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+
+  box-shadow: 0 0 5px rgb(34, 31, 27);
 }
 
 .header-left-container {
-    display: flex;
-    height: 100%;
-    overflow: hidden;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
 }
 
 #logo-container {
-    width: 140px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color:#746349; */
-    background-color: #ffffff;
-    border-right: 1px solid black;
+  width: 140px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color:#746349; */
+  background-color: #ffffff;
+  border-right: 1px solid black;
 }
 
 #header-logo {
-    height: 70px;
+  height: 70px;
 }
 
 #header-title {
-    max-height: 80px;
-    line-height: 80px;
-    font-size: 5.5rem;
-    color: rgb(168, 150, 116);
-    padding: 0 15px;
+  max-height: 80px;
+  line-height: 80px;
+  font-size: 5.5rem;
+  font-weight: 900;
+  color: rgb(168, 150, 116);
+  padding: 0 15px;
+}
+
+#header-title-animation-clip {
+  background: url("https://demicog-bikes.s3.us-west-1.amazonaws.com/demicog-wave-flow.gif");
+  background-size: cover;
+  background-position: bottom right;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: drop-shadow(1px 0 0 rgb(168, 150, 116))
+    drop-shadow(-1px 0 0 rgb(168, 150, 116))
+    drop-shadow(0 1px 0 rgb(168, 150, 116))
+    drop-shadow(0 -1px 0 rgb(168, 150, 116));
 }
 
 #new-comment-feed {
-    position: fixed;
-    top: 80px;
-    right: 140px;
-    width: 40%;
-    max-height: 50vh;
-    overflow-y: auto !important;
-    background-color: #161616;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: 1px solid #979797;
-    border-top: none;
-    transition: all .5s;
+  position: fixed;
+  top: 80px;
+  right: 140px;
+  width: 40%;
+  max-height: 50vh;
+  overflow-y: auto !important;
+  background-color: #161616;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #979797;
+  border-top: none;
+  transition: all 0.5s;
 }
 
 #new-comment-feed::-webkit-scrollbar {
@@ -61,132 +74,132 @@ header {
 }
 
 #new-comment-feed::-webkit-scrollbar-thumb {
-  background: #F06F66;
+  background: #f06f66;
   border-radius: 2px;
 }
 
 #new-comment-feed a {
-    color: #4EA3E4;
+  color: #4ea3e4;
 }
 
 #new-comment-feed a:hover {
-    color: #F06F66;
+  color: #f06f66;
 }
 
 .comment {
-    position: relative;
+  position: relative;
 }
 
 .comment-feed-toggle-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 40px;
-    position: fixed;
-    top: 80px;
-    right:150px;
-    background-color: #F06F66;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 40px;
+  position: fixed;
+  top: 80px;
+  right: 150px;
+  background-color: #f06f66;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .comment-btn-container {
-    position: absolute;
-    display: flex;
-    top: 0px;
-    left: 60px;
-    color: white;
-    visibility: hidden;
+  position: absolute;
+  display: flex;
+  top: 0px;
+  left: 60px;
+  color: white;
+  visibility: hidden;
 }
 
 .comment-btn {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-.comment-btn svg:hover{
-    color: #F06F66;
+.comment-btn svg:hover {
+  color: #f06f66;
 }
 
 .show-feed-btn {
-    visibility: visible;
+  visibility: visible;
 }
 
 #main-nav {
-    top: 0px;
-    left: 550px;
-    width: 330px;
-    height: 80px;
-    /* position: fixed; */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    border-left: 1px solid rgb(65, 65, 65);
-    /* background-color: #4EA3E4; */
-    z-index: 3;
-    font-weight: bold;
+  top: 0px;
+  left: 550px;
+  width: 330px;
+  height: 80px;
+  /* position: fixed; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  border-left: 1px solid rgb(65, 65, 65);
+  /* background-color: #4EA3E4; */
+  z-index: 3;
+  font-weight: bold;
 }
 
 #main-nav a {
-    height: 33%;
-    width: 100px;
-    color: rgb(65, 65, 65);
-    text-decoration: none;
-    /* border-right: 1px solid black; */
+  height: 33%;
+  width: 100px;
+  text-decoration: none;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* border-right: 1px solid black; */
+  color: rgb(65, 65, 65);
 }
 
 #main-nav a:hover {
-    color: white;
-}
-
-#main-nav p {
-    padding-left: 5px;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    height: 100%;
+  color: #f06f66;
 }
 
 #nav-lines {
-    border-top: 1px solid rgb(65, 65, 65);
-    border-bottom: 1px solid rgb(65, 65, 65);
+  border-top: 1px solid rgb(65, 65, 65);
+  border-bottom: 1px solid rgb(65, 65, 65);
 }
 
 #user-info-container {
-    height: 100%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    right: 140px;
-    color: black;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 140px;
+  color: black;
 }
 
 #user-info-container h2 {
-    margin-top: 3px;
-    align-self: flex-start;
+  margin-top: 3px;
+  align-self: flex-start;
 }
 
 #user-info-container h2 span {
-    color: white;
-    margin-right: 3px;
+  margin-right: 3px;
 }
 
 #profile-img {
-    height: 70px;
-    width: 70px;
-    object-fit: cover;
-    margin: 0 10px;
-    border-radius: 5px;
-    border: 1px solid black;
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background: black;
 }
 
 @media (max-width: 1200px) {
-    #header-title {
-        display: none;
-    }
+  #header-title {
+    display: none;
+  }
 
-    #main-nav {
-        left: 139px;
-    }
+  #main-nav {
+    left: 139px;
+  }
+}
+
+.hide-comment-feed {
+  height: 0px;
 }
